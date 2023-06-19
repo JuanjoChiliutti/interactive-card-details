@@ -1,7 +1,108 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@font-face {
+  font-family: 'SpaceGrotesk-Bold';
+  src: url(../src/assets/fonts/SpaceGrotesk-Bold.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'SpaceGrotesk-Light';
+  src: url(../src/assets/fonts/SpaceGrotesk-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk-Regular';
+  src: url(../src/assets/fonts/SpaceGrotesk-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk-Medium';
+  src: url(../src/assets/fonts/SpaceGrotesk-Medium.ttf) format('truetype');
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+#root {
+  font-family: 'SpaceGrotesk-Regular';
+  font-size: 13px;
+}
+.principal {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.card {
+  position: fixed;
+  width: 30em;
+  height: 25em;
+  background-color: aqua;
+}
+.card-front {
+  width: 20em;
+  height: 10em;
+  background-image: url(../src/assets/images/bg-card-front.png);
+  background-size: cover;
+  z-index: 0;
+}
+
+.card-back {
+  width: 20em;
+  height: 10em;
+  background-image: url(../src/assets/images/bg-card-back.png);
+  background-size: cover;
+}
+.left-side-bar {
+  width: 33%;
+  background-image: url(../src/assets/images/bg-main-desktop.png);
+  background-size: cover ;
+}
+.main-form {
+  margin: 25em 25em; 
+  width: 20em;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+}
+.cardholder label,
+.cardnumber label,
+.exp label,
+.cvc label {
+  display: block;
+  font-family: 'SpaceGrotesk-Bold' ;
+}
+.main-form-h {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exp {
+  
+  display: flex;
+  flex-direction: column;
+}
+.cvc {
+
+  width: 40%;
+}
+
+.caja {
+  width: 100%;
+  height: 2em;
+  margin: 0.4em 1em 1em 0em;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 0.3em;
+  color: hsl(270, 3%, 87%);
+  font-family: 'SpaceGrotesk-Light';
+  
+}
+.mesdia {
+  width: 4em;
+}
+.btn-confirm {
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+}
