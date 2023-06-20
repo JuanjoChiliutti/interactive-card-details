@@ -18,39 +18,45 @@
   src: url(../src/assets/fonts/SpaceGrotesk-Medium.ttf) format('truetype');
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-}
+
 #root {
   font-family: 'SpaceGrotesk-Regular';
   font-size: 13px;
 }
 .principal {
   position: relative;
-  width: 100vw;
+  width: 1440px;
   height: 100vh;
   display: flex;
 }
-.card {
-  position: fixed;
-  width: 30em;
-  height: 25em;
-  background-color: aqua;
-}
+
 .card-front {
-  width: 20em;
-  height: 10em;
+  position: absolute;
+  width: 25%;
+  height: 28%;
+  top: 20%;
+  left: 15%;
+  background-color: red;
   background-image: url(../src/assets/images/bg-card-front.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   z-index: 0;
+  border-radius: 0.7em;
 }
 
 .card-back {
-  width: 20em;
-  height: 10em;
+  position: absolute;
+  width: 25%;
+  height: 28%;
+  top: 50%;
+  left: 20%;
   background-image: url(../src/assets/images/bg-card-back.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:center;
+  border-radius: 0 0.7em 0.7em 0;
+  background-color: red;
 }
 .left-side-bar {
   width: 33%;
@@ -58,7 +64,8 @@ body {
   background-size: cover ;
 }
 .main-form {
-  margin: 25em 25em; 
+  position: relative;
+  margin: 15% 20%; 
   width: 20em;
   height: 20em;
   display: flex;
@@ -105,4 +112,53 @@ body {
 .btn-confirm {
   background-color: hsl(278, 68%, 11%);
   color: hsl(0, 0%, 100%);
+}
+
+.contenedor-numero {
+  width: 100%;
+  margin: 30% 0% 0% 10%;
+}
+.nroTarjeta {
+  font-family: 'SpaceGrotesk-Medium';
+  font-size: 1.5em;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 2px;
+}
+.datos {
+  font-family: 'SpaceGrotesk-Medium';
+  color: hsl(0, 0%, 100%);
+  font-size: 1em;
+}
+.enlinea {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: red;
+}
+.nrocvc {
+  width: 6%;
+  margin: 20% 0% 0% 65%;
+  background-color: aqua;
+}
+
+.contenedor-imagen {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 30%;
+  height: 20%;
+  background-image: url('../src/assets/images/card-logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.contenedor-imagen img {
+  
+}
+@media (max-width: 767px) {
+  #root {
+    font-size: 10px;
+  }
 }
