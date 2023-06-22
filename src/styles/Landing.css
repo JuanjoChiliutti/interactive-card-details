@@ -1,0 +1,135 @@
+.principal {
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .card-front {
+    position: absolute;
+    width: 25%;
+    height: 28%;
+    top: 20%;
+    left: 15%;
+    background-image: url(../src/assets/images/bg-card-front.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    border-radius: 0.7em;
+  }
+  
+  .card-back {
+    position: absolute;
+    width: 25%;
+    height: 28%;
+    top: 50%;
+    left: 20%;
+    background-image: url(../src/assets/images/bg-card-back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 0 0.7em 0.7em 0;  
+  }
+  .left-side-bar {
+    width: 33%;
+    background-image: url(../src/assets/images/bg-main-desktop.png);
+    background-size: cover ;
+  }
+  .main-form {
+    position: relative;
+    margin: 15% 20%; 
+    width: 20em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+  }
+  .cardholder label,
+  .cardnumber label,
+  .exp label,
+  .cvc label {
+    display: block;
+    font-family: 'SpaceGrotesk-Bold' ;
+  }
+  .main-form-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .exp {  
+    display: flex;
+    flex-direction: column;
+  }
+  .cvc {
+    width: 40%;
+  }
+  
+  .caja {
+    width: 100%;
+    height: 2em;
+    margin: 0.4em 1em 1em 0em;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 0.3em;
+    color: hsl(270, 3%, 87%);
+    font-family: 'SpaceGrotesk-Light'; 
+  }
+  .mesdia {
+    width: 4em;
+  }
+  .btn-confirm {
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .contenedor-numero {
+    width: 100%;
+    margin: 30% 0% 0% 10%;
+  }
+  .nroTarjeta {
+    font-family: 'SpaceGrotesk-Medium';
+    font-size: 1.5em;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 2px;
+  }
+  .datos {
+    font-family: 'SpaceGrotesk-Medium';
+    color: hsl(0, 0%, 100%);
+    font-size: 1em;
+  }
+  .enlinea {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .nrocvc {
+    width: 6%;
+    margin: 25% 0% 0% 80%;
+  }
+  
+  .contenedor-imagen {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 30%;
+    height: 20%;
+    background-image: url('../src/assets/images/card-logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+  }
+  .errorstyle{
+    color: red;
+    border-color: red;
+  }
+  @media (max-width: 767px) {
+    #root {
+      font-size: 10px;
+    }
+  }
+  

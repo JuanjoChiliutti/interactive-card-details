@@ -24,8 +24,9 @@
   font-size: 13px;
 }
 .principal {
+  margin: 0;
   position: relative;
-  width: 1440px;
+  width: 100vw;
   height: 100vh;
   display: flex;
 }
@@ -36,7 +37,6 @@
   height: 28%;
   top: 20%;
   left: 15%;
-  background-color: red;
   background-image: url(../src/assets/images/bg-card-front.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -55,8 +55,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position:center;
-  border-radius: 0 0.7em 0.7em 0;
-  background-color: red;
+  border-radius: 0 0.7em 0.7em 0;  
 }
 .left-side-bar {
   width: 33%;
@@ -86,13 +85,11 @@
   justify-content: space-between;
 }
 
-.exp {
-  
+.exp {  
   display: flex;
   flex-direction: column;
 }
 .cvc {
-
   width: 40%;
 }
 
@@ -103,8 +100,7 @@
   border: 1px solid hsl(270, 3%, 87%);
   border-radius: 0.3em;
   color: hsl(270, 3%, 87%);
-  font-family: 'SpaceGrotesk-Light';
-  
+  font-family: 'SpaceGrotesk-Light'; 
 }
 .mesdia {
   width: 4em;
@@ -135,12 +131,10 @@
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
-  background-color: red;
 }
 .nrocvc {
   width: 6%;
-  margin: 20% 0% 0% 65%;
-  background-color: aqua;
+  margin: 25% 0% 0% 80%;
 }
 
 .contenedor-imagen {
@@ -154,8 +148,9 @@
   background-repeat: no-repeat;
 
 }
-.contenedor-imagen img {
-  
+.errorstyle{
+  color: red;
+  border: 1px solid red;
 }
 @media (max-width: 767px) {
   #root {
