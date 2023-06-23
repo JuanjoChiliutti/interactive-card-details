@@ -1,0 +1,27 @@
+.thanks {
+    width: 20em;
+    height: 20em;
+    margin: 15% 20%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.thanks img {
+    width: 5em;
+}
+.thanks h2 {
+    font-size: 25px;
+    font-family: 'SpaceGrotesk-Bold';
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+.thanks p {
+    font-family: 'SpaceGrotesk-Bold';
+    color: hsl(300, 0%, 59%);
+    margin-bottom: 2em;
+}
+.btn-thanks {
+    width: 100%;
+    border-radius: 0.3em;
+}
