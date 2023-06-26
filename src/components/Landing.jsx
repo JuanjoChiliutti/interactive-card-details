@@ -1,7 +1,7 @@
 
 import {  useEffect, useRef, useState } from 'react'
 import '../styles/Landing.css'
-import MainForm from './mainForm'
+import MainForm from './MainForm'
 import Thanks from './Thanks';
 
 
