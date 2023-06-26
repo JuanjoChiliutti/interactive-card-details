@@ -127,9 +127,88 @@
     color: red;
     border-color: red;
   }
+  span {
+    color: red
+  }
   @media (max-width: 767px) {
     #root {
       font-size: 10px;
+    }
+    .principal {
+      flex-direction: column;
+    }
+    .left-side-bar {
+      width: 100%;
+      height: 33%;   
+    }
+    .card-front {
+      position: absolute;
+      width: 90%;
+      height: 20%;
+      top: 17%;
+      left: 3%;
+      z-index: 1;
+    }
+    
+    .card-back {
+      position: absolute;
+      width: 90%;
+      height: 20%;
+      top: 5%;
+      left: 10%;
+ 
+    }
+    .main-form {
+      position: relative;
+      margin: 15% 5%; 
+      width: 90%;
+      height: 50%;
+      
+    }
+    .mesdia {
+      width: 4em;
+    }
+    .btn-confirm {
+      margin-top: 10%;
+      height: 12%;
+      background-color: hsl(278, 68%, 11%);
+      color: hsl(0, 0%, 100%);
+      font-size: large;
+    }
+    
+    .contenedor-numero {
+      width: 90%;
+      margin: 20% 0% 0% 20%;
+
+    }
+    
+
+    .enlinea {
+      width: 38%;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20%;
+    }
+    .nrocvc {
+      width: 6%;
+      margin: 18% 0% 0% 69%;
+    }
+    
+    .contenedor-imagen {
+
+      margin-top: 5%;
+      margin-left: 25%;
+      width: 30%;
+      height: 20%;
+    }
+    .caja {
+      width: 80%;
+      height: 2.5em;
+      margin: 0.4em 1em 1em 0em;
+
+    }
+    .mesdia {
+      width: 3.5em;
     }
   }
   

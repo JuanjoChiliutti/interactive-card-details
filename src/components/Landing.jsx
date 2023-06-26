@@ -26,7 +26,7 @@ function Landing() {
                 !next ?
                 <MainForm input={input} setInput={setInput} setNext={setNext} />
                 :
-                <Thanks setNext={setNext}/>
+                <Thanks setNext={setNext} setInput={setInput} input={input}/>
             }
             
             

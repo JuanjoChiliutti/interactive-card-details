@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useEffect, useRef, useState } from 'react'
 
@@ -104,8 +105,9 @@ function MainForm({ input, setInput, setNext }) {
                             className={errors.nombre ? 'errorstyle caja' : 'caja'}
                             value={input.nombre}
                         />
-                        {errors.nombre && <span>{errors.nombre}</span>}
+                        {errors.nombre && <span className='juanjo'>{errors.nombre}</span>}
                     </div>
+
                     <div className='cardnumber'>
                         <label htmlFor='' className='etiqueta'>
                             CARD NUMBER
